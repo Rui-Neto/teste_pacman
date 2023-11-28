@@ -1,0 +1,57 @@
+:root{
+    --quadrado_cor: #DEB887;
+    --linha_cor: #800000;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.mapa {
+    display: flex;
+    flex-direction: column;
+    border: 0.0625em solid var(--linha_cor);
+}
+
+.linha {
+    display: flex;
+}
+
+.quadrado {
+    width: 4.8em;
+    height: 4.8em;
+    border: 0.0625em solid var(--linha_cor);
+    background-color: var(--quadrado_cor);
+}
+
+.peca {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+
+
+@media (max-width:900px) {
+    .mapa {
+        max-width: 100vmin;
+    }
+    .linha {
+        font-size: 2vmin;
+    }
+}
+
+@media (min-width:320px) {
+    .mapa {
+        max-width: 100vmin;
+    }
+    .linha {
+        font-size: 2vmin;
+    }
+}
